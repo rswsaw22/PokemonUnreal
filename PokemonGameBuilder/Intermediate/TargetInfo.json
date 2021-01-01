@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "PokemonGameBuilder",
+			"Path": "/Users/johbecke/workspaces/personal/PokemonUnreal/PokemonGameBuilder/Source/PokemonGameBuilder.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "PokemonGameBuilderEditor",
+			"Path": "/Users/johbecke/workspaces/personal/PokemonUnreal/PokemonGameBuilder/Source/PokemonGameBuilderEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
