@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Pngs/Game Boy Advance - Pokemon FireRed LeafGreen - Pallet Town.png" type="Texture" id=1]
+
+[sub_resource type="ImageTexture" id=1]
+
+[node name="PalletTown" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 1
+
+[node name="Area2D" type="Area2D" parent="TileMap"]
+
+[node name="TextureRect" type="TextureRect" parent="TileMap/Area2D"]
+margin_left = 6.0
+margin_top = 6.0
+margin_right = 1024.0
+margin_bottom = 596.0
+texture = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Game Boy Advance - Pokemon FireRed LeafGreen - Pallet Town" type="Sprite" parent="TileMap/Area2D/TextureRect"]
+position = Vector2( 646.777, 600.89 )
+scale = Vector2( 3.35938, 3.36164 )
+texture = ExtResource( 1 )

@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="PokemonGameBuilder"
+run/main_scene="res://Scenes/PalletTown.tscn"
 config/icon="res://icon.png"
 
 [editor_plugins]
