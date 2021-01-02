@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 public class PokemonGameBuilderTarget : TargetRules
 {
-	public PokemonGameBuilderTarget(TargetInfo Target) : base(Target)
+	public PokemonGameBuilderTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.Add("PokemonGameBuilder");
+		ExtraModuleNames.AddRange( new string[] { "PokemonGameBuilder" } );
 	}
 }

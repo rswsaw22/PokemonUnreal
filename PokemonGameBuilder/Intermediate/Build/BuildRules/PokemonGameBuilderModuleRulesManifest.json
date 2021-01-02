@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"/Users/johbecke/workspaces/personal/PokemonUnreal/PokemonGameBuilder/Source/PokemonGameBuilder/PokemonGameBuilder.Build.cs",
-		"/Users/johbecke/workspaces/personal/PokemonUnreal/PokemonGameBuilder/Source/PokemonGameBuilder.Target.cs",
-		"/Users/johbecke/workspaces/personal/PokemonUnreal/PokemonGameBuilder/Source/PokemonGameBuilderEditor.Target.cs"
+		"C:\\Users\\histo\\Documents\\GitHub\\PokemonUnreal\\PokemonGameBuilder\\Source\\PokemonGameBuilder\\PokemonGameBuilder.Build.cs",
+		"C:\\Users\\histo\\Documents\\GitHub\\PokemonUnreal\\PokemonGameBuilder\\Source\\PokemonGameBuilder.Target.cs",
+		"C:\\Users\\histo\\Documents\\GitHub\\PokemonUnreal\\PokemonGameBuilder\\Source\\PokemonGameBuilderEditor.Target.cs"
 	],
 	"EngineVersion": "4.26.0"
 }

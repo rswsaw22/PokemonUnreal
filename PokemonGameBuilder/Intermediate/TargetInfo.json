@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "PokemonGameBuilder",
-			"Path": "/Users/johbecke/workspaces/personal/PokemonUnreal/PokemonGameBuilder/Source/PokemonGameBuilder.Target.cs",
+			"Path": "C:\\Users\\histo\\Documents\\GitHub\\PokemonUnreal\\PokemonGameBuilder\\Source\\PokemonGameBuilder.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "PokemonGameBuilderEditor",
-			"Path": "/Users/johbecke/workspaces/personal/PokemonUnreal/PokemonGameBuilder/Source/PokemonGameBuilderEditor.Target.cs",
+			"Path": "C:\\Users\\histo\\Documents\\GitHub\\PokemonUnreal\\PokemonGameBuilder\\Source\\PokemonGameBuilderEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

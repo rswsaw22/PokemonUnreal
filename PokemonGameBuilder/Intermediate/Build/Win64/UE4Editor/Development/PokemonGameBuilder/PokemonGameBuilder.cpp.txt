@@ -1,0 +1,2 @@
+C:\Users\histo\Documents\GitHub\PokemonUnreal\PokemonGameBuilder\Intermediate\Build\Win64\UE4Editor\Development\PokemonGameBuilder\Definitions.PokemonGameBuilder.h
+C:\Users\histo\Documents\GitHub\PokemonUnreal\PokemonGameBuilder\Source\PokemonGameBuilder\PokemonGameBuilder.h

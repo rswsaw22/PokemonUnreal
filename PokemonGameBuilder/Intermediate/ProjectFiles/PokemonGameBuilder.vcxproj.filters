@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\PokemonGameBuilder.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FE1B0E9-DC4E-45F9-8588-7CDAC111888E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PokemonGameBuilder.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\PokemonGameBuilderEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{54A98A7A-3180-40C2-B20E-7470AD6A53F8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\PokemonGameBuilder">
+      <UniqueIdentifier>{8D29EE6F-F80C-4031-A553-D3D1BCE798E1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PokemonGameBuilder\PokemonGameBuilder.Build.cs">
+      <Filter>Source\PokemonGameBuilder</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\PokemonGameBuilder\PokemonGameBuilder.cpp">
+      <Filter>Source\PokemonGameBuilder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PokemonGameBuilder\PokemonGameBuilder.h">
+      <Filter>Source\PokemonGameBuilder</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\PokemonGameBuilder\PokemonGameBuilderGameModeBase.cpp">
+      <Filter>Source\PokemonGameBuilder</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PokemonGameBuilder\PokemonGameBuilderGameModeBase.h">
+      <Filter>Source\PokemonGameBuilder</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

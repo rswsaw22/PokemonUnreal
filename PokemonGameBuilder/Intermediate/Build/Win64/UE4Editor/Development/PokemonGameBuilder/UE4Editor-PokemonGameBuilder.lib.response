@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-PokemonGameBuilder.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\histo\Documents\GitHub\PokemonUnreal\PokemonGameBuilder\Intermediate\Build\Win64\PokemonGameBuilderEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\histo\Documents\GitHub\PokemonUnreal\PokemonGameBuilder\Intermediate\Build\Win64\UE4Editor\Development\PokemonGameBuilder\PokemonGameBuilder.cpp.obj"
+"C:\Users\histo\Documents\GitHub\PokemonUnreal\PokemonGameBuilder\Intermediate\Build\Win64\UE4Editor\Development\PokemonGameBuilder\PokemonGameBuilderGameModeBase.cpp.obj"
+"C:\Users\histo\Documents\GitHub\PokemonUnreal\PokemonGameBuilder\Intermediate\Build\Win64\UE4Editor\Development\PokemonGameBuilder\PokemonGameBuilder.init.gen.cpp.obj"
+"C:\Users\histo\Documents\GitHub\PokemonUnreal\PokemonGameBuilder\Intermediate\Build\Win64\UE4Editor\Development\PokemonGameBuilder\PokemonGameBuilderGameModeBase.gen.cpp.obj"
+"C:\Users\histo\Documents\GitHub\PokemonUnreal\PokemonGameBuilder\Intermediate\Build\Win64\UE4Editor\Development\PokemonGameBuilder\Default.rc2.res"
+/OUT:"C:\Users\histo\Documents\GitHub\PokemonUnreal\PokemonGameBuilder\Intermediate\Build\Win64\UE4Editor\Development\PokemonGameBuilder\UE4Editor-PokemonGameBuilder.lib"
+/INCLUDE:IMPLEMENT_MODULE_PokemonGameBuilder
