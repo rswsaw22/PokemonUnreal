@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Pngs/Game Boy Advance - Pokemon FireRed LeafGreen - Pallet Town.png" type="Texture" id=1]
 [ext_resource path="res://MainCharacterAnimations/MainCharacterAnim.tscn" type="PackedScene" id=2]
@@ -6,28 +6,129 @@
 
 [sub_resource type="ImageTexture" id=1]
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 183.2, 93.3481 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 159.783, 6.68066 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 133.325, 8.05756 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 134.113, 98.8854 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 19.3965, 19.3362 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 21.8086, 10.0635 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 109.118, 85.4504 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 10, 522.232 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 291.093, 10 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 10, 55.7093 )
+
 [node name="PalletTown" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
 format = 1
 
-[node name="Area2D" type="Area2D" parent="TileMap"]
+[node name="StaticBody2D" type="StaticBody2D" parent="TileMap"]
+position = Vector2( -6.88778, 8.93763 )
 
-[node name="TextureRect" type="TextureRect" parent="TileMap/Area2D"]
+[node name="TextureRect" type="TextureRect" parent="TileMap/StaticBody2D"]
 margin_left = 6.0
 margin_top = 6.0
-margin_right = 1024.0
-margin_bottom = 596.0
+margin_right = 1281.0
+margin_bottom = 1234.0
 texture = SubResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Game Boy Advance - Pokemon FireRed LeafGreen - Pallet Town" type="Sprite" parent="TileMap/Area2D/TextureRect"]
-position = Vector2( 646.777, 600.89 )
+[node name="Game Boy Advance - Pokemon FireRed LeafGreen - Pallet Town" type="Sprite" parent="TileMap/StaticBody2D/TextureRect"]
+position = Vector2( 646.48, 602.669 )
 scale = Vector2( 3.35938, 3.36164 )
 texture = ExtResource( 1 )
 
-[node name="KinematicBody2D" parent="TileMap" instance=ExtResource( 2 )]
-position = Vector2( 401.899, 486.426 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 894.006, 633.685 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 864.266, 869.945 )
+shape = SubResource( 3 )
+one_way_collision_margin = 0.0
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 409.955, 604.322 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 407.367, 311.761 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 893.844, 311.415 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 248.064, 390.621 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 732.547, 390.759 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 303.145, 762.597 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 490.817, 991.257 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 101.31, 555.298 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 1206.93, 557.679 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 359.546, 83.3385 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 344.466, 1069.11 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 1060.38, 80.9574 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 900.056, 1069.91 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 638.135, 30.9543 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="TileMap/StaticBody2D"]
+position = Vector2( 774.652, 37.3039 )
+shape = SubResource( 11 )
+
+[node name="MainCharacterAnim" parent="." instance=ExtResource( 2 )]
+position = Vector2( 402.693, 499.125 )
+collision_layer = 2147483649
 script = ExtResource( 3 )

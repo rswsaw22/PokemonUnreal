@@ -14,35 +14,42 @@ public class MainCharacterAnim : KinematicBody2D
     // Declare member variables here. Examples:
     // private int a = 2;
     // private string b = "text";
-    private DirectionEnum playerDirection;
+    private DirectionEnum playerDirection = DirectionEnum.UP;
+    public int speed = 5;
+    public Vector2 velocity = new Vector2();
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        playerDirection = DirectionEnum.UP; 
+
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(float delta)
     {
-        var playerCharacter = GetNode<AnimatedSprite>("MainCharacter");    
+        velocity = new Vector2();
+        var playerCharacter = GetNode<AnimatedSprite>("PlayerCharacter");    
 
-        if(Input.IsActionPressed("move_up"))
+        if(Input.IsActionPressed("ui_up"))
         {
             playerCharacter.Play("Up");
             playerDirection = DirectionEnum.UP;
-        } else if (Input.IsActionPressed("move_down"))
+            velocity.y += -1;
+        } else if (Input.IsActionPressed("ui_down"))
         {
             playerCharacter.Play("Down");
             playerDirection = DirectionEnum.DOWN;
-        } else if (Input.IsActionPressed("move_right"))
+            velocity.y += 1;
+        } else if (Input.IsActionPressed("ui_right"))
         {
             playerCharacter.Play("Right");
             playerDirection = DirectionEnum.RIGHT;
-        } else if (Input.IsActionPressed("move_left"))
+            velocity.x += 1;
+        } else if (Input.IsActionPressed("ui_left"))
         {
             playerCharacter.Play("Left");
             playerDirection = DirectionEnum.LEFT;
+            velocity.x += -1;
         } else
         {
             switch(playerDirection)
@@ -62,6 +69,11 @@ public class MainCharacterAnim : KinematicBody2D
                 default:
                     break;
             }
+        }
+        KinematicCollision2D collision = MoveAndCollide(velocity * speed);
+        if (collision != null)
+        {
+            GD.Print("Collided!");
         }
     }
 }
