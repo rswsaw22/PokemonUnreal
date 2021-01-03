@@ -1,4 +1,4 @@
-# PokemonUnreal
+# PokemonGodot
 
 ## Setup
 
