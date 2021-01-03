@@ -20,6 +20,10 @@ Because this is an experience only project, contribution guidelines are fairly s
 
 For non-contributors but people who want to test and contribute in that way, open a ticket as above but assign it to one of the three administrators and the work can be properly coordinated from there. You may be asked to help with the testing of your own ticket however, so make sure in the description you indicate the OS you were on and that this is a test-only ticket so we know you are not planning to contribute development work.
 
+## Trouble Shooting Advice
+
+The maintainers of this repo have found that multipe VS setups can hurt the project. Make sure you are setup to handle .NET framework 4.7.2 or you may run into odd build issues.
+
 ## Administrators
   * historybuffjb
   * GoldenBug
