@@ -74,6 +74,7 @@ public class MainCharacterAnim : KinematicBody2D
         if (collision != null)
         {
             GD.Print("Collided!");
+            GD.Print("With a butterfly!");
         }
     }
 }
